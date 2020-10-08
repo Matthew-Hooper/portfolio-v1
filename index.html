@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=0, initial-scale=1.0">
+    <meta name="description" content="Matthew Hooper's web development portfolio for applying to jobs.">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
     <title>My Portfolio</title>
 </head>
 <body>
-    <nav>
-        <a href="/index.html">
-            <img src="/Logo.png" alt="Matthew Hooper logo">
+    <nav class="navbar">
+        <a href="#hero">
+            <img src="/newBlueResized.png" alt="Matthew Hooper logo">
         </a>
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
         <ul>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        </div>
     </nav>
-    <div class="hero">
-        <img src="https://placekitten.com/200/300" alt="placeholder image">
-        <h1>Matthew Hooper</h1>
-        <h2>Frontend Web Developer</h2>
+    <div class="hero" id="hero">
+        <div>
+            <img src="https://placekitten.com/200/300" alt="placeholder image">
+            <h1>Matthew Hooper</h1>
+            <h2>Frontend Web Developer</h2>
+        </div>
         <p class="intro">I am a web developer that focuses more on the frontend aspect. I am working on learning backend development too though so I can go into full-stack. I mainly like to work remotely, especially since there isn't a lot of places near my area with web developer positions.</p>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
         <h1>Skills</h1>
-        <div class="container">
+        <div class="skills-container">
             <div class="soft-skills">
-                <h3>Soft skills</h3>
+                <h2>Soft skills</h2>
                 <ul>
                     <li>English</li>
                     <li>Communication</li>
@@ -35,7 +46,7 @@
                 </ul>
             </div>
             <div class="frontend-skills">
-                <h3>Frontend Skills</h3>
+                <h2>Frontend Skills</h2>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -43,7 +54,7 @@
                 </ul>
             </div>
             <div class="tech-skills">
-                <h3>Tech Skills</h3>
+                <h2>Tech Skills</h2>
                 <ul>
                     <li>Git</li>
                     <li>Github</li>
@@ -52,14 +63,37 @@
             </div>
         </div>
     </div>
-    <div class="projects">
-
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-1">
+                <h2>Sample Title</h2>
+                <img src="https://placekitten.com/200/200" alt="">
+                <p>This is a sample paragraph</p>
+            </div>
+            <div class="project-2">
+                <h2>Sample Title</h2>
+                <img src="https://placekitten.com/200/200" alt="">
+                <p>This is a sample paragraph</p>
+            </div>
+        </div>
     </div>
-    <div class="contact">
-
+    <div class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="contact-message">Message:</label>
+            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+            <input type="button" value="Submit" class="button">
+        </form>
     </div>
-    <footer>
+    <!-- <footer>
         <h1>This is a placeholder</h1>
-    </footer>
+    </footer> -->
+
+    <script src="app.js"> </script>
 </body>
 </html>
