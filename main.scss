@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 :root {
-    --main-color: rgb(59, 59, 59);
+    --nav-bg: rgb(59, 59, 59);
     --accent-color: #1B9DC5;
     --body-color: rgb(43, 43, 43);
     --border-color: rgb(199, 199, 199);
     --off-white: rgb(196, 196, 196);
+    --yellow: rgb(206, 203, 46)
 }
 
 * {
@@ -25,17 +26,14 @@ body {
 
 .hero {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 12.3rem;
     border-bottom: 2px solid var(--border-color);
     // border-radius: 10%;
-    color: var(--accent-color);
+    color: var(--off-white);
     display: flex;
     justify-content: space-evenly;
     justify-items: center;
     align-content: center;
-    div {
-        margin-top: 5rem;
-    }
     img {
         height: 10rem;
         width: 10rem;
@@ -53,6 +51,30 @@ body {
         color: var(--off-white);
         font-family: 'Josefin Sans', sans-serif;
     }
+    button {
+        background-color: var(--accent-color);
+        border: none;
+        border-radius: 15px;
+        // width: 140px;
+        width: 60%;
+        position: relative;
+        margin: 10px;
+        padding: 5px;
+        a {
+            text-decoration: none;
+            color: var(--body-color);
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+            text-align: center;
+        }
+    }
+    .cta-contact {
+        background-color: var(--yellow);
+        
+    }
+
     .intro {
         width: 50%;
         position: relative;
@@ -61,29 +83,34 @@ body {
         letter-spacing: 0.3rem;
         font-weight: bold;
         margin-top: 7rem;
+        border-left: 1px dashed var(--border-color);
+        padding-left: 5%;
     }
 }
 
 .skills h1, .projects h1, .contact h1 {
     font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 0.2rem;
 }
 
 .skills {
     background-color: var(--body-color);
     color: var(--off-white);
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4.8rem;
     border-bottom: 2px solid var(--border-color);
     // border-radius: 10%;
     position: relative;
     text-align: center;
     h1 {
-        padding: 4rem 0 2rem 0; 
+        // padding: 4rem 0 2rem 0;
+        margin: 4rem 0rem; 
         color: var(--accent-color);
-        text-decoration: underline;
     }
+
     h2 {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         font-size: 1.17em;
         text-align: left;
         text-decoration: underline;
@@ -97,25 +124,29 @@ body {
         list-style-type: disc;
         text-align: left;
     }
+    li {
+        margin-bottom: 1rem;
+    }
     .skills-container {
         display: flex;
         justify-content: space-evenly;
         position: relative;
-        // flex: 1 1 1;
+        right: 2%;
+        // border: 1px solid hotpink;
     }
 }
 
 .projects {
     padding-top: 2rem;
+    padding-bottom: 3.5rem;
     background-color: var(--body-color);
     border-bottom: 2px solid var(--border-color);
     // border-radius: 10%;
     position: relative;
     text-align: center;
     h1 {
-        color: var(--accent-color);
+        color: var(--yellow);
         padding-top: 4rem;
-        text-decoration: underline;
     }
     .projects-container {
         width: 100%;
@@ -141,6 +172,7 @@ body {
 
 .contact {
     padding-top: 4rem;
+    // padding-bottom: 5rem;
     color: var(--accent-color);
     background-color: var(--body-color);
     border-bottom: 2px solid var(--border-color);
@@ -150,7 +182,6 @@ body {
         text-align: center;
         margin-bottom: 2.5rem;
         // padding-top: 0.5rem;
-        text-decoration: underline;
     }
     form {
         display: flex;
@@ -193,8 +224,22 @@ footer {
 @media screen and (max-width: 500px) {
     .hero {
         flex-direction: column;
+        div {
+            margin-top: 4rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
         img {
-            margin-top: 10%;
+            height: 6rem;
+            width: 6rem;
+            margin-top: 5%;
+        }
+        button {
+            width: 140px;
         }
         .intro {
             left: 50%;
@@ -202,6 +247,11 @@ footer {
             letter-spacing: 0.2rem;
             transform: translate(-50%);
             margin-top: 1rem;
+            font-size: 0.8rem;
+            border-left: none;
+            border-top: 1px dashed var(--border-color);
+            padding-left: 0%;
+            padding-top: 5%;
         }
     }
 
@@ -225,7 +275,7 @@ footer {
             text-align: center;
             width: 100%;
         }
-        .frontend-skills, .tech-skills {
+        .dev-skills, .tech-skills, .soft-skills {
             padding-top: 2rem;
         }
     }

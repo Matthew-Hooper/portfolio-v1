@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
 :root {
-  --main-color: rgb(59, 59, 59);
+  --nav-bg: rgb(59, 59, 59);
   --accent-color: #1B9DC5;
   --body-color: rgb(43, 43, 43);
   --border-color: rgb(199, 199, 199);
   --off-white: rgb(196, 196, 196);
+  --yellow: rgb(206, 203, 46)
+;
 }
 
 * {
@@ -26,9 +28,9 @@ body {
 
 .hero {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 12.3rem;
   border-bottom: 2px solid var(--border-color);
-  color: var(--accent-color);
+  color: var(--off-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,10 +40,6 @@ body {
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-}
-
-.hero div {
-  margin-top: 5rem;
 }
 
 .hero img {
@@ -64,6 +62,30 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.hero button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 15px;
+  width: 60%;
+  position: relative;
+  margin: 10px;
+  padding: 5px;
+}
+
+.hero button a {
+  text-decoration: none;
+  color: var(--body-color);
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.hero .cta-contact {
+  background-color: var(--yellow);
+}
+
 .hero .intro {
   width: 50%;
   position: relative;
@@ -76,30 +98,33 @@ body {
   letter-spacing: 0.3rem;
   font-weight: bold;
   margin-top: 7rem;
+  border-left: 1px dashed var(--border-color);
+  padding-left: 5%;
 }
 
 .skills h1, .projects h1, .contact h1 {
   font-family: 'Josefin Sans', sans-serif;
+  text-decoration: underline;
+  letter-spacing: 0.2rem;
 }
 
 .skills {
   background-color: var(--body-color);
   color: var(--off-white);
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4.8rem;
   border-bottom: 2px solid var(--border-color);
   position: relative;
   text-align: center;
 }
 
 .skills h1 {
-  padding: 4rem 0 2rem 0;
+  margin: 4rem 0rem;
   color: var(--accent-color);
-  text-decoration: underline;
 }
 
 .skills h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.17em;
   text-align: left;
   text-decoration: underline;
@@ -120,6 +145,10 @@ body {
   text-align: left;
 }
 
+.skills li {
+  margin-bottom: 1rem;
+}
+
 .skills .skills-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,10 +157,12 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
+  right: 2%;
 }
 
 .projects {
   padding-top: 2rem;
+  padding-bottom: 3.5rem;
   background-color: var(--body-color);
   border-bottom: 2px solid var(--border-color);
   position: relative;
@@ -139,9 +170,8 @@ body {
 }
 
 .projects h1 {
-  color: var(--accent-color);
+  color: var(--yellow);
   padding-top: 4rem;
-  text-decoration: underline;
 }
 
 .projects .projects-container {
@@ -180,7 +210,6 @@ body {
 .contact h1 {
   text-align: center;
   margin-bottom: 2.5rem;
-  text-decoration: underline;
 }
 
 .contact form {
@@ -237,8 +266,22 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .hero div {
+    margin-top: 4rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero h2 {
+    font-size: 1rem;
+  }
   .hero img {
-    margin-top: 10%;
+    height: 6rem;
+    width: 6rem;
+    margin-top: 5%;
+  }
+  .hero button {
+    width: 140px;
   }
   .hero .intro {
     left: 50%;
@@ -247,6 +290,11 @@ footer {
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     margin-top: 1rem;
+    font-size: 0.8rem;
+    border-left: none;
+    border-top: 1px dashed var(--border-color);
+    padding-left: 0%;
+    padding-top: 5%;
   }
   .skills .skills-container {
     -webkit-box-orient: vertical;
@@ -273,7 +321,7 @@ footer {
     text-align: center;
     width: 100%;
   }
-  .skills .skills-container .frontend-skills, .skills .skills-container .tech-skills {
+  .skills .skills-container .dev-skills, .skills .skills-container .tech-skills, .skills .skills-container .soft-skills {
     padding-top: 2rem;
   }
 }
