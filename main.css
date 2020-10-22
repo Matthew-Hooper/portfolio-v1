@@ -396,6 +396,9 @@ footer {
   .skills .skills-container .dev-skills, .skills .skills-container .tech-skills, .skills .skills-container .soft-skills {
     padding-top: 2rem;
   }
+  .projects .projects-container .project {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 680px) {

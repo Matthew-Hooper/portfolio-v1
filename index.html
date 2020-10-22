@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="nav.css">
     <title>My Portfolio</title>
 </head>
-<body>
+<body class="body">
     <nav class="navbar">
         <a href="#hero">
             <img src="newBlueResized.png" alt="Matthew Hooper logo">
         </a>
         <a class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
         </a>
         <div class="navbar-links">
         <ul>
@@ -26,92 +26,94 @@
         </ul>
         </div>
     </nav>
-    <div class="hero" id="hero">
-        <div>
-            <img src="https://placekitten.com/200/300" alt="placeholder image">
-            <h1>Matthew Hooper</h1>
-            <h2>Frontend Web Developer</h2>
-            <button class="github"><a href="https://github.com/Matthew-Hooper" target="_blank" rel="noopener">Github</a></button>
-            <button class="cta-contact"><a href="#contact">Contact Me</a></button>
+    <div class="main">
+        <div class="hero" id="hero">
+            <div>
+                <img src="https://placekitten.com/200/300" alt="placeholder image">
+                <h1>Matthew Hooper</h1>
+                <h2>Frontend Web Developer</h2>
+                <button class="github"><a href="https://github.com/Matthew-Hooper" target="_blank" rel="noopener">Github</a></button>
+                <button class="cta-contact"><a href="#contact">Contact Me</a></button>
+            </div>
+            <p class="intro">I am a web developer that focuses more on the frontend aspect. I am working on learning backend development too though so I can go into full-stack. I mainly like to work remotely, especially since there isn't a lot of places near my area with web developer positions.</p>
         </div>
-        <p class="intro">I am a web developer that focuses more on the frontend aspect. I am working on learning backend development too though so I can go into full-stack. I mainly like to work remotely, especially since there isn't a lot of places near my area with web developer positions.</p>
-    </div>
-    <div class="skills" id="skills">
-        <h1>Skills</h1>
-        <div class="skills-container">
-            <div class="dev-skills">
-                <h2>Development Skills</h2>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Sass</li>
-                </ul>
-            </div>
-            <div class="tech-skills">
-                <h2>Tech Skills</h2>
-                <ul>
-                    <li>Git</li>
-                    <li>Github</li>
-                    <li>Wordpress</li>
-                    <li>Netlify</li>
-                </ul>
-            </div>
-            <div class="soft-skills">
-                <h2>Soft skills</h2>
-                <ul>
-                    <li>Critical thinking</li>
-                    <li>Communication</li>
-                    <li>Writing</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="projects" id="projects">
-        <h1>Projects</h1>
-        <div class="projects-container">
-            <div class="project">
-                <div class="flip-inner">
-                    <div class="front">
-                        <img src="/bird-feed-website.png" alt="">
-                    </div>
-                    <div class="back">
-                        <h2>The Bird Feed</h2>
-                        <p>This website is dedicated to bird facts and bird images. It uses two APIs, one for the facts and one for random bird images.</p>
-                        <button class="live"><a href="https://matthew-hooper.github.io/the-bird-feed/" target="_blank">Live Demo</a></button>
-                        <button class="github"><a href="https://github.com/Matthew-Hooper/the-bird-feed" target="_blank">Github</a></button>
-                    </div>
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="dev-skills">
+                    <h2>Development Skills</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Sass</li>
+                    </ul>
+                </div>
+                <div class="tech-skills">
+                    <h2>Tech Skills</h2>
+                    <ul>
+                        <li>Git</li>
+                        <li>Github</li>
+                        <li>Wordpress</li>
+                        <li>Netlify</li>
+                    </ul>
+                </div>
+                <div class="soft-skills">
+                    <h2>Soft skills</h2>
+                    <ul>
+                        <li>Critical thinking</li>
+                        <li>Communication</li>
+                        <li>Writing</li>
+                    </ul>
                 </div>
             </div>
-            <div class="project">
-                <div class="flip-inner">
-                    <div class="front">
-                        <img src="/nasa-apod-site-2.png" alt="">
-                    </div>
-                    <div class="back">
-                        <h2>NASA apod website</h2>
-                        <p>This website uses the API from NASA for their astronomy picture of the day. Since it's not always a picture I wrote an if statement to show pictures and videos. It also dynamically updates the media, copyright, and description.</p>
-                        <button class="live"><a href="https://matthew-hooper.github.io/NASA-Apod-Site-/" target="_blank">Live Demo</a></button>
-                        <button class="github"><a href="https://github.com/Matthew-Hooper/NASA-Apod-Site-" target="_blank">Github</a></button>
+        </div>
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="flip-inner">
+                        <div class="front">
+                            <img src="/bird-feed-website.png" alt="">
+                        </div>
+                        <div class="back">
+                            <h2>The Bird Feed</h2>
+                            <p>This website is dedicated to bird facts and bird images. It uses two APIs, one for the facts and one for random bird images.</p>
+                            <button class="live"><a href="https://matthew-hooper.github.io/the-bird-feed/" target="_blank">Live Demo</a></button>
+                            <button class="github"><a href="https://github.com/Matthew-Hooper/the-bird-feed" target="_blank">Github</a></button>
+                        </div>
                     </div>
                 </div>
+                <div class="project">
+                    <div class="flip-inner">
+                        <div class="front">
+                            <img src="/nasa-apod-site-2.png" alt="">
+                        </div>
+                        <div class="back">
+                            <h2>NASA apod website</h2>
+                            <p>This website uses the API from NASA for their astronomy picture of the day. Since it's not always a picture I wrote an if statement to show pictures and videos. It also dynamically updates the media, copyright, and description.</p>
+                            <button class="live"><a href="https://matthew-hooper.github.io/NASA-Apod-Site-/" target="_blank">Live Demo</a></button>
+                            <button class="github"><a href="https://github.com/Matthew-Hooper/NASA-Apod-Site-" target="_blank">Github</a></button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            
         </div>
-    </div>
-    <div class="contact" id="contact">
-        <h1>Contact Me</h1>
-        <form name="Contact" method="POST" netlify>
-            <label for="name">Name:
-            <input type="text" name="name" id="name"></label>
-            <label for="email">Email:
-            <input type="email" name="email" id="email"></label>
-            <label for="contact-message" class="message-label">Message:
-            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea></label>
-            <button type="submit" class="button">Submit</button>
-        </form>
-    </div>
+        <div class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <form name="Contact" method="POST" netlify>
+                <label for="name">Name:
+                <input type="text" name="name" id="name"></label>
+                <label for="email">Email:
+                <input type="email" name="email" id="email"></label>
+                <label for="contact-message" class="message-label">Message:
+                <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea></label>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
 
-    <script src="app.js"> </script>
+        <script src="app.js"> </script>
+    </div>
 </body>
 </html>
