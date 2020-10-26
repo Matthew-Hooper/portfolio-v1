@@ -17,5 +17,5 @@ main.addEventListener('click', closeNavMenu);
 function closeNavMenu() {
     let navLinks = document.querySelector(".navbar-links");
     navLinks.classList.remove('active');
-    button.classList.toggle('change');
+    button.classList.remove('change');
 };

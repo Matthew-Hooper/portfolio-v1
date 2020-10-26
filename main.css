@@ -29,6 +29,7 @@ body {
 .hero {
   text-align: center;
   padding-bottom: 12.3rem;
+  padding-top: 5rem;
   border-bottom: 2px solid var(--border-color);
   color: var(--off-white);
   display: -webkit-box;
@@ -42,11 +43,8 @@ body {
       align-content: center;
 }
 
-.hero img {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  margin-top: 50%;
+.hero div {
+  margin-top: 9rem;
 }
 
 .hero h1 {
@@ -202,6 +200,8 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   margin-bottom: 2rem;
+  overflow: hidden;
+  font-size: 75%;
 }
 
 .projects .projects-container .project .flip-inner {
@@ -235,7 +235,7 @@ body {
 
 .projects .projects-container .project .flip-inner .back p {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   width: 80%;
   position: relative;
   left: 50%;
